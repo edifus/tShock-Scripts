@@ -5,8 +5,8 @@ tShock Debian / Ubuntu init scripts
 
 I created these scripts to host multiple tShock maps on my server.
 
-I originally updated the script found here: [nooblet.org](http://www.nooblet.org/blog/2013/installing-tshock-terraria-server-on-debian-wheezy/)
-I need to be able to run multiple maps under the same user account so I adapted the script for that purpose.
+I originally updated the script found here: [nooblet.org](http://www.nooblet.org/blog/2013/installing-tshock-terraria-server-on-debian-wheezy/).
+I needed to be able to run multiple maps under the same user account so I adapted the script for that purpose.
 
 After a while I wanted to not use tmux instead of screen. I find screen clunky and hard to use reliably when connecting to session from other users.
 
