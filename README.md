@@ -14,33 +14,33 @@ I updated the script to use tmux instead. The tmux version will launch a new tmu
 Any user that belongs to the same group-id as the 'terraria' user can easily connect to the tmux socket.
 
 ```
-/home/terraria/						${HOMEDIR}
-|-- Test							${TSHOCKDIR}
-|   |-- ServerLog.txt
-|   |-- ServerPlugins
-|   |   |-- HttpServer.dll
-|   |   |-- Mono.Data.Sqlite.dll
-|   |   |-- MySql.Data.dll
-|   |   |-- MySql.Web.dll
-|   |   |-- Newtonsoft.Json.dll
-|   |   `-- TShockAPI.dll
-|   |-- sqlite3.dll
-|   |-- Terraria
-|   |   `-- Worlds
-|   |-- TerrariaServer.exe			${TERRARIA}
-|   `-- tshock
-|       |-- authcode.txt
-|       |-- config.json
-|       |-- motd.txt
-|       |-- rules.txt
-|       |-- sscconfig.json
-|       |-- tshock.pid				${TSHOCKPID}
-|       |-- Test.pid				${TMUXPID} / ${SCREENPID}
-|       `-- whitelist.txt
-|-- Worlds							${WORLDDIR}
-|   |-- Test.wld					${WORLDFILE}
-|   `-- Test.wld.bak
-`-- tmux.tshock						${TMUXSOCKET}
+/home/terraria/					${HOMEDIR}
+├── Test/						${TSHOCKDIR}
+│   ├── ServerLog.txt
+│   ├── ServerPlugins
+│   │   ├── HttpServer.dll
+│   │   ├── Mono.Data.Sqlite.dll
+│   │   ├── MySql.Data.dll
+│   │   ├── MySql.Web.dll
+│   │   ├── Newtonsoft.Json.dll
+│   │   └── TShockAPI.dll
+│   ├── sqlite3.dll
+│   ├── Terraria/
+│   │   └── Worlds/
+│   ├── TerrariaServer.exe		${TERRARIA}
+│   └── tshock/
+│       ├── authcode.txt
+│       ├── config.json
+│       ├── motd.txt
+│       ├── rules.txt
+│       ├── sscconfig.json
+│       ├── tshock.pid			${TSHOCKPID}
+│       ├── Test.pid			${TMUXPID} / ${SCREENPID}
+│       └── whitelist.txt
+├── Worlds/						${WORLDDIR}
+│   ├── Test.wld				${WORLDFILE}
+│   └── Test.wld.bak
+└── tmux.tshock					${TMUXSOCKET}
 ```
 
 TODO: Additional instructions to setup user account and directory structure.
