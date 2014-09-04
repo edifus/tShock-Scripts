@@ -8,9 +8,9 @@ I created these scripts to host multiple tShock maps on my server.
 I originally updated the script found here: [nooblet.org](http://www.nooblet.org/blog/2013/installing-tshock-terraria-server-on-debian-wheezy/).
 I needed to be able to run multiple maps under the same user account so I adapted the script for that purpose.
 
-After a while I wanted to not use tmux instead of screen. I find screen clunky and hard to use reliably when connecting to session from other users.
+After a while I wanted to use tmux instead of screen. I find screen clunky, poorly documented, and hard to use reliably when connecting to session from other users.
 
-The screen version of the script will launch a new screen session which can be connected to as the terraria user or through this script.
+The screen version of the script will launch a new screen session which can be connected to as the 'terraria' user or through this script.
 
 The tmux version will launch a new tmux session called 'tShock' and the script will then open new windows in this session for each server.
 Any user that belongs to the same group-id as the 'terraria' user can easily connect to the tmux socket.
