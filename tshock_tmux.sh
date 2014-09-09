@@ -183,6 +183,9 @@ do_connect() {
 		log_progress_msg "ERROR: Connect failed. (tmux window '${NAME}' not found)"
 		echo "ERROR: Connect failed. (tmux window '${NAME}' not found)" && return 1	
 	else
+		# Select the correct tmux server window prior to connecting
+		${TMUXDAEMON} -S ${TMUXSOCKET} select-window -t tShock:${NAME}
+		# Connect to the tShock tmux session
 		${TMUXDAEMON} -S ${TMUXSOCKET} attach || return 2
 	fi
 }
